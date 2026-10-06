@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#0E4F57">
+<title>Menu | Adam Bakery &amp; Pastry, Muscat</title>
+<meta name="description" content="Browse the Adam Bakery & Pastry menu: breads, manakish, croissants, sandwiches, Arabic sweets and cakes. Build your order online.">
+<link rel="icon" href="assets/img/logo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-title-ar="القائمة | مخبز وحلويات آدم">
+<div class="demo" data-ar="نموذج موقع من إعداد &lt;a href=&quot;https://www.vartexflow.com&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;VartexFlow&lt;/a&gt; لمخبز وحلويات آدم">Website demo prepared by <a href="https://www.vartexflow.com" target="_blank" rel="noopener">VartexFlow</a> for Adam Bakery &amp; Pastry</div>
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="brand" href="index.html" aria-label="Adam Bakery &amp; Pastry" data-ar-label="مخبز وحلويات آدم">
+      <img src="assets/img/logo.jpg" alt="" width="54" height="54">
+      <span><b data-ar="آدم">Adam</b><small data-ar="مخبز وحلويات">BAKERY &amp; PASTRY</small></span>
+    </a>
+    <ul class="links" id="site-links">
+      <li><a href="index.html" data-ar="الرئيسية">Home</a></li>
+      <li><a href="menu.html" aria-current="page" data-ar="القائمة">Menu</a></li>
+      <li><a href="index.html#occasions" data-ar="المناسبات">Occasions</a></li>
+      <li><a href="index.html#branches" data-ar="فروعنا">Branches</a></li>
+    </ul>
+    <button class="lang" type="button" aria-label="Switch to Arabic" data-ar-label="التبديل إلى الإنجليزية" data-ar="English">عربي</button>
+    <button class="cart-btn" type="button" data-open-cart><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 8h12l-1 12H7L6 8Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span class="label" data-ar="طلبي">My order</span><span class="count">0</span></button>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-links" aria-label="Menu" data-ar-label="القائمة">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+  </div>
+</header>
+<main>
+<section class="page-hero">
+  <div class="wrap">
+    <div>
+      <h1 data-ar="قائمتنا">Our menu</h1>
+      <p data-ar="اختر أصنافك، حدّد الكمية، وأرسل طلبك إلى الفرع.">Choose your items, set the quantity and send your order to the branch.</p>
+    </div>
+    <div class="mini-arch"><img src="assets/img/croissant-seeds.jpg" alt=""></div>
+  </div>
+</section>
+<div class="menu-bar">
+  <div class="wrap">
+    <nav class="tabs" aria-label="Menu categories" data-ar-label="أقسام القائمة"></nav>
+    <label class="search">
+      <span class="sr" data-ar="ابحث في القائمة">Search the menu</span>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <input id="menu-search" type="search" placeholder="Search: croissant, kunafa…" data-ar-placeholder="ابحث: كرواسان، كنافة…">
+    </label>
+  </div>
+</div>
+<div id="menu-root"></div>
+<p class="empty wrap" role="status"></p>
+<section class="section">
+  <div class="wrap">
+    <div class="head" style="margin-bottom:0">
+      <div>
+        <h2 data-ar="تبحث عن شيء آخر؟">Looking for something else?</h2>
+        <p data-ar="تتغير تشكيلتنا يومياً. راسلنا وسنخبرك بما هو متوفر اليوم.">Our selection changes daily. Message us and we will tell you what is fresh today.</p>
+      </div>
+      <a class="btn btn-teal" href="index.html#branches"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 8h12l-1 12H7L6 8Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span data-ar="اسأل عن المتوفر اليوم">Ask what is fresh today</span></a>
+    </div>
+  </div>
+</section>
+</main>
+<div class="scrim"></div>
+<aside class="drawer" aria-hidden="true" inert aria-labelledby="drawer-title" role="dialog" aria-modal="true">
+  <header>
+    <h2 id="drawer-title" data-ar="طلبي">My order</h2>
+    <button class="x" type="button" aria-label="Close" data-ar-label="إغلاق"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+  </header>
+  <div class="items"></div>
+  <form class="checkout" id="order-form" novalidate>
+    <label for="branch" data-ar="الفرع">Branch</label>
+    <select id="branch"></select>
+    <label data-ar="طريقة الاستلام">How would you like it?</label>
+    <div class="seg">
+      <label><input type="radio" name="mode" value="pickup" checked><span data-ar="استلام من الفرع">Pickup</span></label>
+      <label><input type="radio" name="mode" value="delivery"><span data-ar="توصيل">Delivery</span></label>
+    </div>
+    <label for="cust-name" data-ar="الاسم">Your name</label>
+    <input id="cust-name" autocomplete="name" required>
+    <label for="notes" data-ar="ملاحظات (اختياري)">Notes (optional)</label>
+    <textarea id="notes" placeholder="Pickup time, delivery area, cake message…" data-ar-placeholder="وقت الاستلام، منطقة التوصيل، عبارة الكيك…"></textarea>
+    <button class="btn btn-teal" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 8h12l-1 12H7L6 8Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span data-ar="أرسل الطلب (تجريبي)">Place order (demo)</span></button>
+    <p class="hint" data-ar="هذا موقع تجريبي، لن يتم إرسال الطلب.">Portfolio demo: orders are not sent anywhere.</p>
+  </form>
+</aside>
+<div class="toast" role="status" aria-live="polite"></div>
+<button class="fab" type="button" data-open-cart><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 8h12l-1 12H7L6 8Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span data-ar="عرض الطلب">View order</span><span class="count">0</span></button>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="fgrid">
+      <div class="fbrand">
+        <img src="assets/img/logo.jpg" alt="Adam Bakery &amp; Pastry logo" width="70" height="70">
+        <p data-ar="خبز ومعجنات وحلويات عربية طازجة، تُخبز يومياً في مسقط.">Fresh bread, pastries and Arabic sweets, baked daily in Muscat.</p>
+      </div>
+      <div>
+        <h4 data-ar="القائمة">Menu</h4>
+        <ul>
+          <li><a href="menu.html#breads" data-ar="الخبز">Breads</a></li>
+          <li><a href="menu.html#manakish" data-ar="المناقيش">Manakish</a></li>
+          <li><a href="menu.html#pastries" data-ar="الكرواسان والمعجنات">Croissants &amp; pastries</a></li>
+          <li><a href="menu.html#sweets" data-ar="الحلويات العربية">Arabic sweets</a></li>
+          <li><a href="menu.html#cakes" data-ar="الكيك">Cakes</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 data-ar="فروعنا">Branches</h4>
+        <ul>
+          <li><span data-ar="العذيبة">Al Athaiba</span><br><a class="ltr" href="tel:+00000000000">+000 0000 0000</a></li>
+          <li><span data-ar="الموالح">Al Mawaleh</span><br><a class="ltr" href="tel:+00000000000">+000 0000 0000</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 data-ar="تابعونا">Follow us</h4>
+        <ul>
+          <li><a href="https://www.instagram.com/adambakery_om" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://www.talabat.com/oman/adam-bakery-pastry" target="_blank" rel="noopener" data-ar="اطلب عبر طلبات">Order on Talabat</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="fbottom">
+      <span>&copy; <span data-year>2026</span> <span data-ar="مخبز وحلويات آدم">Adam Bakery &amp; Pastry</span></span>
+      <span><span data-ar="نموذج من">Demo by</span> <a href="https://www.vartexflow.com" target="_blank" rel="noopener">VartexFlow</a></span>
+    </div>
+  </div>
+</footer>
+<script src="assets/js/data.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>
